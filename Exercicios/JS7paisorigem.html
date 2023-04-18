@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páis de Origem</title>
+</head>
+<body>
+    <h1>Ficha de Pessoas</h1>
+    Qual seu país de origem : <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="stranger()">
+    <div id="res"></div>
+
+    <script>
+       function stranger(){
+        var origempais = window.document.getElementById("txtpais")
+        var resposta = window.document.getElementById("res")
+           
+        if(origempais.value == "Brasil" ){
+            resposta.innerHTML = `Você é brasileiro, <strong>Bem vindo!</strong>`
+       } else {
+            resposta.innerHTML = `Você não é brasileiro, é estrangeiro, <strong>Não é bem vindo!</strong>`
+       }
+    }
+    </script>
+</body>
+</html>
